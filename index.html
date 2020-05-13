@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./img/me.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type = "text/javascript" src = "./js/js.js"></script>
+
+</head>
+<style>
+	a,span{
+	    font-family: 'Carrois Gothic SC';font-size: 22px;
+	    color :white ;
+	}
+	#n {
+   font-family: 'Rock Salt';font-size: 70px;
+	 color :white ;
+    }
+	#dr {
+    opacity: 0.5;
+   }
+   #galery{
+	    font-family: 'Rock Salt';font-size: 30px;
+	 color :white ;;
+	}
+
+</style
+<body>
+<div  class="container4">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="resume.html"><img id="logo2"  src="./img/me.jpg" height="80" width="80">
+  <p>Azlinie Zainal</p><hr></a>
+  <a href="#">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="resume.html">Profile</a>
+  <a href="profile.html">My Skill</a>
+  <a href="feeback.html">Feeback</a>
+  <a href="favourite.html">Favourite</a>
+</div>
+<div class="icon-bar">
+  <a href="https://ms-my.facebook.com/people/Azlinie-Zainal/100008426137602" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://azlinie33@gmail.com" class="google"><i class="fa fa-google"></i></a>  
+  <a href="#" class="github"><i class="fa fa-github"></i></a> 
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+<br>
+  <header>
+        <center>
+        <h1 id="n"> Azlinie Zainal </h1>
+		<p style="color :#ffb00d">I am your Futue Programmer </p>
+		<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<br><br>
+<center>
+<div class="con" >
+      <i class="fa fa-check"style='font-size:50px'></i>
+	  <h3>40+</h3>
+	  <p> C++ Projects </p> 
+</div>
+<div  class="con" >
+      <i class="fa fa-check"style='font-size:50px'></i>
+	  <h3>30+</h3>
+	  <p> Java Projects </p> 
+</div>
+<div class="con" >
+      <i class="fa fa-check"style='font-size:50px'></i>
+	  <h3>10+</h3>
+	  <p> Web Projects </p> 
+</div>
+<div class="con" >
+      <i class="fa fa-check"style='font-size:50px'></i>
+	  <h3>20+</h3>
+	  <p> Multimedia Projects </p> 
+</div>
+<div class="con" >
+      <i class="fa fa-check"style='font-size:50px'></i>
+	  <h3>15+</h3>
+	  <p> Database Projects </p> 
+</div>
+		<br>
+	
+  </header>
+<main>
+    <br>
+</center>
+<center>
+<h2 id="galery">My Project Gallery</h2>
+<div class="container5">
+<div class="con1" >
+       <a target="_blank" href="./img/js.png">
+       <img class="one"  src="./img/js.png" height="300" width="500"></a>
+	    <p > My First JS project </p>
+</div>
+<div class="con1" >
+       <a target="_blank" href="./img/upcoming.jpg">
+       <img class="one"  src="./img/upcoming.jpg" height="300" width="500"></a>
+	    <p > My Upcoming Project </p>
+</div>
+<br>
+<div class="cont4">
+      <a target="_blank" href="./img/poster.jpg">
+      <img class="one"  src="./img/poster.jpg" height="400" width="300"></a>
+	  <p style="color : white"> My First Poster </p></div>
+	  <div>
+	  <video width="400" controls>	  
+     <source src="my.mp4" type="video/mp4">
+     <source src="my.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+	<p style="color : white"> My Latest Project </p></div>
+</div>
+</center>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</main> 
+</div>  
+<footer>
+  <p>Design by azlinie33@gmail.com </p>
+   <a href="#"><i class="fa fa-github"></i></a>
+	 <a href="#"><i class="fa fa-facebook"></i></a>
+	 <a href="#"><i class="fa fa-google"></i></a>
+	  <a href="#"><i class="fa fa-twitter"></i></	 
+</footer> 
+</body>
+</html> 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./img/me.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<style>
+	a,span{
+	    font-family: 'Carrois Gothic SC';font-size: 22px;
+	    color :white ;
+	}
+	#n {
+   font-family: 'Rock Salt';font-size: 70px;
+	 color :white ;
+    }
+	#Me{
+	    font-family: 'Rock Salt';font-size: 40px;
+	 color :white 
+	}
+	#p{
+	 font-family: 'Advent Pro';font-size: 22px;  
+	 color :white 
+	}
+	.p{
+	 font-family: 'Advent Pro';font-size: 22px;  
+	 color :white 
+	}
+	#more {display: none;}
+	#s{
+	   font-family: 'Abel';font-size: 22px;
+	   color :white ;
+	}
+	#tag{
+	   font-family: 'Abel';font-size: 22px;
+
+	}
+</style
+<body>
+<div  class="container3">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="resume.html"><img id="logo2"  src="./img/me.jpg" height="80" width="80">
+  <p>Azlinie Zainal</p><hr></a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="resume.html">Profile</a>
+  <a href="profile.html">My Skill</a>
+  <a href="feeback.html">Feeback</a>
+  <a href="favourite.html">Favourite</a>
+</div>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+ <a href="#" class="github"><i class="fa fa-github"></i></a>   
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+<br>
+<main>
+<center>
+<h1 id="Me">My Profile</h1>
+<center>
+<div class="card">
+  <br>
+  <img src="./img/MY.jpg" alt="Azlinie"  height="200" width="200">
+  <h1 id="tag" >Azlinie Zainal</h1>
+  <p>Kelantan,Malaysia</p>
+  <p>013-6511763 | azlinie33@gmail.com </p>
+  <p class="title">STUDENT | PROGRAMMER</p>
+  <h4 class="tit">Infomation Detail </h4>
+  <p class="edu">Full Name : Siti Azlinie Bt Zainal Abidin</p>
+  <p class="edu">Date of Birth : 1 September 1999</p>
+  <p class="edu">Age : 20 year old</p>
+  <p class="edu">Martial Status : Single</p>
+  <h4 class="tit">Objective </h4>
+  <p class="edu">I would like to utilize my skills and experience in programing and web developer</p>
+  <p class="edu">as well as my passion for contribute in the science computer field</p>
+ 
+  <h4 class="tit">Education Background </h4>
+  <p class="edu">2016-2017  Kelantan Matriculation</p>
+  <p class="edu">2016-2017  Universiti Teknologi MARA ( Major in Computer Science)</p>
+  <br>
+</div>
+
+</center>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</main> 
+</div>  
+</body>
+<footer>
+  <p>Design by azlinie33@gmail.com </p>
+   <a href="#"><i class="fa fa-github"></i></a>
+	 <a href="#"><i class="fa fa-facebook"></i></a>
+	 <a href="#"><i class="fa fa-google"></i></a>
+	  <a href="#"><i class="fa fa-twitter"></i></	 
+</footer>
+</html> 

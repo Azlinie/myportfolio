@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./img/me.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<style>
+	a,span{
+	    font-family: 'Carrois Gothic SC';font-size: 22px;
+	    color :white ;
+	}
+	#n {
+   font-family: 'Rock Salt';font-size: 70px;
+	 color :white ;
+    }
+	#dr {
+    opacity: 0.5;
+   }
+  #f {
+   font-family: 'Rock Salt';font-size: 40px;
+	 color :white ;
+    }
+</style
+<body>
+<div  class="container3">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="resume.html"><img id="logo2"  src="./img/me.jpg" height="80" width="80">
+  <p>Azlinie Zainal</p><hr></a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="resume.html">Profile</a>
+  <a href="profile.html">My Skill</a>
+  <a href="feeback.html">Feeback</a>
+  <a href="favourite.html">Favourite</a> 
+</div>
+<div class="icon-bar">
+   <a href="https://ms-my.facebook.com/people/Azlinie-Zainal/100008426137602" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="https://www.instagram.com/azlinie_zainal/?hl=ms"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="https://twitter.com/twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://azlinie33@gmail.com" class="google"><i class="fa fa-google"></i></a>  
+  <a href="#" class="https://github.com/"><i class="fa fa-github"></i></a> 
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+<br>
+
+        <center>
+         <h1 id="f">Favourite</h1>		 
+		<br>
+       </center>
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="./img/Q1.png" style="width:100%" height="300">
+  <div class="text">My inspiration quotes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="./img/fuji.jpg" style="width:100%" height="300">
+  <div class="text">My Favourite place (fuji Mount)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img id="dr" src="./img/drama.png" style="width:100%" height="300">
+  <div class="text">My favourite Drama (Itaewon Class)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img  src="./img/maxresdefault.jpg" style="width:100%" height="300">
+  <div class="text">My favourite Songs (Euphoria by jungkook )</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img  src="./img/food.jpg" style="width:100%" height="300">
+  <div class="text">My favourite food (Caramel Pudding )</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+    <br>
+	<center><p style="color : white"> My favourite Songs</p>
+	<audio controls autoplay >
+  <source src="mysongs.ogg" type="audio/ogg">
+  <source src="mysongs.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio></center>
+<br><br>
+  </header>
+<main>
+<center>
+<br> 
+    <center><p style="color : white"> My favourite Cartoon</p>
+    <video width="400" controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+
+   <p>
+  
+
+
+
+
+
+
+
+</center>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</main> 
+</div>  
+<footer>
+  <p>Design by azlinie33@gmail.com </p>
+   <a href="#"><i class="fa fa-github"></i></a>
+	 <a href="#"><i class="fa fa-facebook"></i></a>
+	 <a href="#"><i class="fa fa-google"></i></a>
+	  <a href="#"><i class="fa fa-twitter"></i></	 
+</footer> 
+</body>
+</html> 
